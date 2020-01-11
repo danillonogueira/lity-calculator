@@ -1,6 +1,6 @@
 import Characters from '../mocks/Characters';
 
-class MachineHelpers {
+export class MachineHelper {
   /**
    * @description Verifies whether a certain character is valid.
    * @requires Characters

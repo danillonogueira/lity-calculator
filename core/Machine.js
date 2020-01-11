@@ -1,13 +1,13 @@
-import MachineHelpers from '../helpers/MachineHelpers';
+import MachineHelper from '../helpers/MachineHelper';
 
-class Machine {
+export class Machine {
   /**
    * @description 
    * @param {String} expression Expression that is supposed to be calculated.
    * @returns {Number} Result of the calculation.
    */
   static calculate(expression) {
-    if (MachineHelpers.validate(expression)) {
+    if (MachineHelper.validate(expression)) {
       return eval(expression);
     }
 

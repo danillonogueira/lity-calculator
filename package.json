@@ -1,0 +1,21 @@
+{
+  "name": "lity-calculator",
+  "version": "1.0.0",
+  "description": "Very simple calculator app built with eval() and a security treatment for it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danillonogueira/lity-calculator.git"
+  },
+  "author": "Danillo Lucas Nogueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danillonogueira/lity-calculator/issues"
+  },
+  "homepage": "https://github.com/danillonogueira/lity-calculator#readme"
+}

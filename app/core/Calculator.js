@@ -1,4 +1,4 @@
-import CalculatorHelper from '../helpers/CalculatorHelper.js/index.js';
+import { CalculatorHelper } from '../helpers/CalculatorHelper';
 
 export class Calculator {
   constructor(element) {

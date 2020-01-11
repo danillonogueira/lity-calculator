@@ -1,5 +1,5 @@
-import Buttons from '../mocks/Buttons.js';
-import Machine from '../core/Machine.js';
+import Buttons from '../mocks/Buttons';
+import Machine from '../core/Machine';
 
 export class CalculatorHelper {
   constructor(display) {

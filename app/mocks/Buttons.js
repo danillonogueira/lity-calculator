@@ -24,7 +24,7 @@ export const Buttons = {
   },
   'six': {
     value: '6',
-    type: character
+    type: 'character'
   },
   'seven': {
     value: '7'

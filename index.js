@@ -1,4 +1,5 @@
-import Calculator from './core/Calculator.jsnpm install -g parcel-bundler';
+import { Calculator } from './app/core/Calculator';
 
-const $ = document.querySelector.bind(document);
-const calculator = new Calculator($('.display'));
+// const $ = document.querySelector.bind(document);
+// const calculator = new Calculator($('.display'));
+const calculator = new Calculator();

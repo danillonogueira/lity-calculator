@@ -12,7 +12,7 @@ export class CalculatorHelper {
    * @returns {String} Value representing the button meaning.
    */
   checkIfClickedOnBtn(element) {
-    return element.getAttribute('type') === 'button' && element.hasAttribute('data-character');
+    return element.getAttribute('type') === 'button' && element.hasAttribute('data-meaning');
   }
 
   /**
@@ -21,7 +21,7 @@ export class CalculatorHelper {
    * @returns {Boolean} Whether it is an action or not.
    */
   checkIfAction(element) {
-    return Buttons[element.getAttribute('data-character')].type === 'action';
+    return Buttons[element.getAttribute('data-meaning')].type === 'action';
   }
 
   /**
@@ -38,6 +38,14 @@ export class CalculatorHelper {
   equal(expression) {
     this._display.textContent = Machine.calculate(expression)
       .toString();
+  }
+
+  /**
+   * @description Inputs a new value (number of symbol) on the display.
+   * @param {String} input Name of the button user clicked. 
+   */
+  print(input) {
+    this._display.texContent.concat(' ', Buttons[input].value);
   }
 
   /**

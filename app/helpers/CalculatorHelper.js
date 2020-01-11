@@ -32,7 +32,7 @@ export class CalculatorHelper {
   }
 
   /**
-   * @description Exceutes and prints the result of an algebraic operation on the display.
+   * @description Executes and prints the result of an algebraic operation on the display.
    * @param {String} expression String that supposedly represents an algebraic operation.
    */
   equal(expression) {

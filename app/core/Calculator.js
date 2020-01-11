@@ -9,15 +9,15 @@ export class Calculator {
    * @description Watches the click event on the calculator.
    */
   click() {
-    // Whether user clicked on a button.
+    // If user clicked on a button.
     if (this._calculatorHelper.checkIfClickedOnBtn(event.target)) {
       const meaning = event.target.getAttribute('data-meaning');
       
-      // Whether user clicked on an button that triggers an operation.
+      //If user clicked on an button that triggers an operation.
       if (this._calculatorHelper.checkIfAction(event.target)) {
         this._calculatorHelper.dispatch(meaning);
 
-      // Whether user clicked on a button that inputs a number or symbol.
+      // If user clicked on a button that inputs a number or symbol.
       } else {
         this._calculatorHelper.print(meaning);
       }

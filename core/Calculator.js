@@ -3,7 +3,7 @@ import Buttons from '../mocks/Buttons.js';
 
 class Calculator {
   constructor(display) {
-    this._display = new display;
+    this._display = display;
   }
 
   /**

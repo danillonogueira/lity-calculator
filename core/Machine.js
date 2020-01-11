@@ -2,7 +2,7 @@ import MachineHelper from '../helpers/MachineHelper';
 
 export class Machine {
   /**
-   * @description 
+   * @description Gives the result of an algebraic operation.
    * @param {String} expression Expression that is supposed to be calculated.
    * @returns {Number} Result of the calculation.
    */

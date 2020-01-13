@@ -13,7 +13,7 @@ export class Calculator {
     if (this._calculatorHelper.checkIfClickedOnBtn(event.target)) {
       const meaning = event.target.getAttribute('data-meaning');
       
-      //If user clicked on an button that triggers an operation.
+      // If user clicked on an button that triggers an action.
       if (this._calculatorHelper.checkIfAction(event.target)) {
         this._calculatorHelper.dispatch(meaning);
 

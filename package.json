@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/danillonogueira/lity-calculator/issues"
   },
-  "homepage": "https://github.com/danillonogueira/lity-calculator#readme"
+  "homepage": "https://github.com/danillonogueira/lity-calculator#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.24.4"
+  }
 }

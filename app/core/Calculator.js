@@ -8,7 +8,7 @@ export class Calculator {
   /**
    * @description Watches the click event on the calculator.
    */
-  click() {
+  click(event) {
     // If user clicked on a button.
     if (this._calculatorHelper.checkIfClickedOnBtn(event.target)) {
       const meaning = event.target.getAttribute('data-meaning');

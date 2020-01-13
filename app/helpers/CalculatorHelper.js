@@ -1,4 +1,4 @@
-import Buttons from '../mocks/Buttons';
+import { Buttons } from '../mocks/Buttons';
 import Machine from '../core/Machine';
 
 export class CalculatorHelper {
@@ -44,8 +44,12 @@ export class CalculatorHelper {
    * @description Inputs a new value (number of symbol) on the display.
    * @param {String} input Name of the button user clicked. 
    */
-  print(input) {
-    this._display.texContent.concat(' ', Buttons[input].value);
+  print(input) {  
+    const currentContent = this._display.textContent;
+    const newContent = currentContent.slice(0, currentContent.length);
+
+    newContent.concat(Buttons[input].value);
+    this._display.textContent = newContent.concat(' ', Buttons[input].value);
   }
 
   /**

@@ -1,5 +1,5 @@
 import { Buttons } from '../mocks/Buttons';
-import Machine from '../core/Machine';
+import { Machine } from '../core/Machine';
 
 export class CalculatorHelper {
   constructor(display) {
@@ -32,11 +32,11 @@ export class CalculatorHelper {
   }
 
   /**
-   * @description Executes and prints the result of an algebraic operation on the display.
-   * @param {String} expression String that supposedly represents an algebraic operation.
+   * @description Executes and prints the result of an algebraic expression on the display.
+   * @param {String} expression String that supposedly represents an algebraic expression.
    */
-  equal(expression) {
-    this._display.textContent = Machine.calculate(expression)
+  equal() {
+    this._display.textContent = Machine.calculate(this._display.textContent)
       .toString();
   }
 
@@ -57,6 +57,6 @@ export class CalculatorHelper {
    * @param {String} action Action to be executed.
    */
   dispatch(action) {
-    this[Buttons[action].action]();
+    this[Buttons[action].action]();   
   }
 }

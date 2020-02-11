@@ -1,4 +1,4 @@
-import Characters from '../mocks/Characters';
+import { Characters } from '../mocks/Characters';
 
 export class MachineHelper {
   /**
@@ -19,7 +19,8 @@ export class MachineHelper {
   static validate(expression) {
     let isValid = true;
 
-    expression.split('')
+    expression.replace(/\s/g, '')
+      .split('')
       .forEach((pretentiousCharacter) => {
         if (!this.validateCharacter(pretentiousCharacter)) {
           isValid = false;

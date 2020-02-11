@@ -1,8 +1,8 @@
-import MachineHelper from '../helpers/MachineHelper';
+import { MachineHelper } from '../helpers/MachineHelper';
 
 export class Machine {
   /**
-   * @description Gives the result of an algebraic operation.
+   * @description Gives the result of an algebraic expression.
    * @param {String} expression Expression that is supposed to be calculated.
    * @returns {Number} Result of the calculation.
    */

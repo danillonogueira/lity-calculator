@@ -37,22 +37,19 @@ export class CalculatorHelper {
    */
   equal() {
     this._display.textContent = Machine.calculate(this._display.textContent).toString();
-
   }
 
   /**
    * @description Inputs a new value (number of symbol) on the display.
    * @param {String} input Name of the button user clicked. 
    */
-  print(input) {  
+  print(input) {
     const currentContent = this._display.textContent;
     const newContent = currentContent.slice(0, currentContent.length);
 
-    console.log(currentContent, newContent);
-
     newContent.concat(Buttons[input].value);
     this._display.textContent = newContent.concat(' ', Buttons[input].value);
-  }
+  }  
 
   /**
    * @description Executes a calculator action (equal or clear).

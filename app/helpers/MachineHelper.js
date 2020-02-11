@@ -19,7 +19,7 @@ export class MachineHelper {
   static validate(expression) {
     return expression.replace(/\s/g, '')
       .split('')
-      .filter(pretentiousCharacter => this.validateCharacter(pretentiousCharacter))
+      .filter(character => this.validateCharacter(character))
       .length;
   }
 }

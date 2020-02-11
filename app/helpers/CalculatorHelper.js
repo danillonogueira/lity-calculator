@@ -48,6 +48,8 @@ export class CalculatorHelper {
     const currentContent = this._display.textContent;
     const newContent = currentContent.slice(0, currentContent.length);
 
+    console.log(currentContent, newContent);
+
     newContent.concat(Buttons[input].value);
     this._display.textContent = newContent.concat(' ', Buttons[input].value);
   }

@@ -22,8 +22,6 @@ export class MachineHelper {
 
     if (last === '+' || last === '-' || last === '*' || last === '/') {
       newExp.splice(newExp.length - 1, 1);
-
-      return newExp.join('');
     }
 
     return newExp.join('');

@@ -36,8 +36,8 @@ export class CalculatorHelper {
    * @param {String} expression String that supposedly represents an algebraic expression.
    */
   equal() {
-    this._display.textContent = Machine.calculate(this._display.textContent)
-      .toString();
+    this._display.textContent = Machine.calculate(this._display.textContent).toString();
+
   }
 
   /**

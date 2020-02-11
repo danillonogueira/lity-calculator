@@ -17,16 +17,9 @@ export class MachineHelper {
    * @returns {Boolean} Whether it is a valid calculation or not.
    */
   static validate(expression) {
-    let isValid = true;
-
-    expression.replace(/\s/g, '')
+    return expression.replace(/\s/g, '')
       .split('')
-      .forEach((pretentiousCharacter) => {
-        if (!this.validateCharacter(pretentiousCharacter)) {
-          isValid = false;
-        }
-      });
-
-    return isValid;
+      .filter(pretentiousCharacter => this.validateCharacter(pretentiousCharacter))
+      .length;
   }
 }

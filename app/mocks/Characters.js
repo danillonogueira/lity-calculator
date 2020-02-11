@@ -9,7 +9,6 @@ export const Characters = [
   '7',
   '8',
   '9',
-  '.',
   '+',
   '-',
   '*',

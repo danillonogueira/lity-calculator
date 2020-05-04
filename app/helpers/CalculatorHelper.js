@@ -39,6 +39,15 @@ export class CalculatorHelper {
     this._display.textContent = Machine.calculate(this._display.textContent).toString();
   }
 
+  checkIfCanPrint() {
+    const currentContent = this._display.textContent.replace(/\s/g,'');
+    const lastChar = currentContent[currentContent.length - 1];
+
+    if (lastChar) {
+      return isNaN(lastChar);
+    }
+  }
+
   /**
    * @description Inputs a new value (number of symbol) on the display.
    * @param {String} input Name of the button user clicked. 

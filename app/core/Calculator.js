@@ -19,7 +19,9 @@ export class Calculator {
     
       // If user clicked on a button that inputs a number or symbol.
       } else {
-        this._calculatorHelper.print(meaning);
+        if(this._calculatorHelper.checkIfCanPrint()) {
+          this._calculatorHelper.print(meaning);
+        }
       }
     }
   }

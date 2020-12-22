@@ -2,11 +2,12 @@
   "name": "lity-calculator",
   "version": "1.0.0",
   "description": "Very simple calculator app built with eval() and a security treatment for it.",
-  "main": "index.js",
+  "main": "electron.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./",
+    "electron": "electron ."
   },
   "repository": {
     "type": "git",

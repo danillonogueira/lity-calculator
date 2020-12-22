@@ -20,6 +20,7 @@
   "homepage": "https://github.com/danillonogueira/lity-calculator#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "electron": "^11.1.1",
     "parcel": "^1.12.4",
     "sass": "^1.30.0"
   }
